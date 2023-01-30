@@ -40,12 +40,13 @@ def main():
 
         elif "add" in comand.casefold() or "change" in comand.casefold():
             add_change_comand(comand)
+            print ("Contact saved")
 
         elif "phone" in comand.casefold():
-            print (phone_comand(comand))
+            print (f"phone {phone_comand(comand)}")
             
         elif "show all" in comand.casefold():
-            print (show_all_comand(CONTACTS))
+            print (f"Your contacts:\n {show_all_comand(CONTACTS)} ")
 
         if  comand.casefold() == "good bye" or comand.casefold() == "close" or comand.casefold() == "exit" :
             print ("Good bye!")
